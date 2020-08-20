@@ -87,7 +87,7 @@ public class ESewaModule extends ReactContextBaseJavaModule {
             return;
         }
 
-        // Store the promise to resolve/reject when picker returns data
+        // Store the promise to resolve/reject when eSewa returns data
         mPromise = promise;
 
         try {
