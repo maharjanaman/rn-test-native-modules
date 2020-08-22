@@ -7,6 +7,9 @@ import {
   Text,
   StatusBar,
   TouchableOpacity,
+  NativeModules,
+  Platform,
+  Alert,
 } from 'react-native';
 
 import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
@@ -14,23 +17,41 @@ import {Header, Colors} from 'react-native/Libraries/NewAppScreen';
 import ToastExample from './ToastExample';
 import ESewaModule from './ESewaModule';
 
+const {ESewa} = NativeModules;
+
 const App = () => {
   useEffect(() => {
-    ESewaModule.init(
-      'JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R',
-      'BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==',
-    );
+    if (Platform.OS === 'android') {
+      ESewaModule.init(
+        'JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R',
+        'BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==',
+      );
+    }
   }, []);
 
-  const handleShowToast = () =>
-    ToastExample.show('Awesome', ToastExample.SHORT);
+  const handleShowToast = () => {
+    if (Platform.OS === 'android') {
+      ToastExample.show('Awesome', ToastExample.SHORT);
+    } else {
+      Alert.alert('Incompatible', 'Only for Android platform');
+    }
+  };
 
   const handleESewaPay = async () => {
     try {
-      const data = await ESewaModule.pay('200', 'Apple', '100', 'abc.com');
-      console.warn(data);
+      if (Platform.OS === 'ios') {
+        const eSewaData = await ESewa.pay();
+        console.warn(eSewaData);
+      } else {
+        const data = await ESewaModule.pay('200', 'Apple', '100', 'abc.com');
+        console.warn(data);
+      }
     } catch (e) {
-      console.warn(e);
+      if (Platform.OS === 'ios') {
+        console.warn(e.message, e.code);
+      } else {
+        console.warn(e);
+      }
     }
   };
 

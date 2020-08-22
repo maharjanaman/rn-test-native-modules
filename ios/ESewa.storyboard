@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ZD-pQ-uCN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sewa View Controller-->
+        <scene sceneID="h12-pI-cTw">
+            <objects>
+                <viewController storyboardIdentifier="ESewaViewController" id="9ZD-pQ-uCN" customClass="ESewaViewController" customModule="TestESewav2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gxz-ca-wiA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have cancelled payment." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwy-q7-HJF">
+                                <rect key="frame" x="96" y="437.5" width="222" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e11-O7-wbs">
+                                <rect key="frame" x="157" y="466.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Bdx-ya-44p"/>
+                                </constraints>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="9ZD-pQ-uCN" eventType="touchUpInside" id="qmO-Oo-xau"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e11-O7-wbs" firstAttribute="top" secondItem="Gwy-q7-HJF" secondAttribute="bottom" constant="8" id="Bfk-jw-1Hq"/>
+                            <constraint firstItem="Gwy-q7-HJF" firstAttribute="centerX" secondItem="gxz-ca-wiA" secondAttribute="centerX" id="YWh-8g-VrB"/>
+                            <constraint firstItem="e11-O7-wbs" firstAttribute="centerX" secondItem="gxz-ca-wiA" secondAttribute="centerX" id="bPm-9d-Pqb"/>
+                            <constraint firstItem="Gwy-q7-HJF" firstAttribute="centerY" secondItem="gxz-ca-wiA" secondAttribute="centerY" id="mac-3E-0hc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QX3-cO-JLo"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="e11-O7-wbs" id="6qY-KH-GPp"/>
+                        <outlet property="messageLabel" destination="Gwy-q7-HJF" id="al5-2M-fv4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHc-qa-lCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="-1"/>
+        </scene>
+    </scenes>
+</document>

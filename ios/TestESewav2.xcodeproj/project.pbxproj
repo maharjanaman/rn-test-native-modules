@@ -19,6 +19,13 @@
 		3244158C0F6D2B0DE46E6F71 /* libPods-TestESewav2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F0D65C00730851DE012CBB /* libPods-TestESewav2.a */; };
 		7C6D4D46745D9AB91E5767F2 /* libPods-TestESewav2-TestESewav2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B58C1D965FBA7F0CAD83B5A /* libPods-TestESewav2-TestESewav2Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B4625BE624EF7C3000879741 /* ESewa.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4625BE524EF7C3000879741 /* ESewa.swift */; };
+		B4625BE824EF7CCA00879741 /* ESewa.m in Sources */ = {isa = PBXBuildFile; fileRef = B4625BE724EF7CCA00879741 /* ESewa.m */; };
+		B4625BF424EFA27200879741 /* EsewaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4625BF224EFA1C000879741 /* EsewaSDK.framework */; };
+		B4625BF524EFA27200879741 /* EsewaSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4625BF224EFA1C000879741 /* EsewaSDK.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B4F8886E24F0FB500069B129 /* ESewaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8886C24F0FB500069B129 /* ESewaViewController.swift */; };
+		B4F8887424F115B70069B129 /* HelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8887324F115B70069B129 /* HelperExtension.swift */; };
+		B4F8887624F126340069B129 /* ESewa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F8887524F126340069B129 /* ESewa.storyboard */; };
 		C8FAC980CFBB0982F6511D88 /* libPods-TestESewav2-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 797BC81AA16F72FB28C08A98 /* libPods-TestESewav2-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +45,20 @@
 			remoteInfo = "TestESewav2-tvOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B4625BF624EFA27200879741 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4625BF524EFA27200879741 /* EsewaSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -61,6 +82,13 @@
 		89F0D65C00730851DE012CBB /* libPods-TestESewav2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestESewav2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98045FE0700B18C916D81F00 /* Pods-TestESewav2-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestESewav2-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TestESewav2-tvOSTests/Pods-TestESewav2-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FE7B88F901227ECFFB116A2 /* Pods-TestESewav2-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestESewav2-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TestESewav2-tvOS/Pods-TestESewav2-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B4625BE424EF7C2F00879741 /* TestESewav2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestESewav2-Bridging-Header.h"; sourceTree = "<group>"; };
+		B4625BE524EF7C3000879741 /* ESewa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESewa.swift; sourceTree = "<group>"; };
+		B4625BE724EF7CCA00879741 /* ESewa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESewa.m; sourceTree = "<group>"; };
+		B4625BF224EFA1C000879741 /* EsewaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EsewaSDK.framework; sourceTree = "<group>"; };
+		B4F8886C24F0FB500069B129 /* ESewaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESewaViewController.swift; sourceTree = "<group>"; };
+		B4F8887324F115B70069B129 /* HelperExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtension.swift; sourceTree = "<group>"; };
+		B4F8887524F126340069B129 /* ESewa.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ESewa.storyboard; sourceTree = "<group>"; };
 		BBD2BA0B04C4ACFF3B25ACA2 /* Pods-TestESewav2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestESewav2.debug.xcconfig"; path = "Target Support Files/Pods-TestESewav2/Pods-TestESewav2.debug.xcconfig"; sourceTree = "<group>"; };
 		CAB5D349F1F955CFC6AAB9D6 /* Pods-TestESewav2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestESewav2.release.xcconfig"; path = "Target Support Files/Pods-TestESewav2/Pods-TestESewav2.release.xcconfig"; sourceTree = "<group>"; };
 		DE518347F50984736419425B /* Pods-TestESewav2-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestESewav2-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TestESewav2-tvOSTests/Pods-TestESewav2-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3244158C0F6D2B0DE46E6F71 /* libPods-TestESewav2.a in Frameworks */,
+				B4625BF424EFA27200879741 /* EsewaSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +161,12 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				B4625BE524EF7C3000879741 /* ESewa.swift */,
+				B4F8887324F115B70069B129 /* HelperExtension.swift */,
+				B4F8886C24F0FB500069B129 /* ESewaViewController.swift */,
+				B4625BE724EF7CCA00879741 /* ESewa.m */,
+				B4625BE424EF7C2F00879741 /* TestESewav2-Bridging-Header.h */,
+				B4F8887524F126340069B129 /* ESewa.storyboard */,
 			);
 			name = TestESewav2;
 			sourceTree = "<group>";
@@ -161,7 +196,6 @@
 				DE518347F50984736419425B /* Pods-TestESewav2-tvOSTests.debug.xcconfig */,
 				98045FE0700B18C916D81F00 /* Pods-TestESewav2-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +209,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B4625BF224EFA1C000879741 /* EsewaSDK.framework */,
 				13B07FAE1A68108700A75B9A /* TestESewav2 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* TestESewav2Tests */,
@@ -232,6 +267,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				14217C5599C228762354F977 /* [CP] Copy Pods Resources */,
+				B4625BF624EFA27200879741 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,7 +330,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1160;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -341,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				B4F8887624F126340069B129 /* ESewa.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,7 +606,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				B4625BE624EF7C3000879741 /* ESewa.swift in Sources */,
+				B4F8886E24F0FB500069B129 /* ESewaViewController.swift in Sources */,
+				B4F8887424F115B70069B129 /* HelperExtension.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B4625BE824EF7CCA00879741 /* ESewa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7810BCC2D26A3ADC75BBE040 /* Pods-TestESewav2-TestESewav2Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -633,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F8394F7B3041FC7FDF5F11F /* Pods-TestESewav2-TestESewav2Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = TestESewav2Tests/Info.plist;
@@ -657,6 +700,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Xcode\\ 11.5,\\ Swift\\ 5/Device:AppStore:Release",
+					"$(PROJECT_DIR)/Xcode\\ 11.5,\\ Swift\\ 5/Simulator:Debug",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestESewav2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -666,6 +715,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TestESewav2;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestESewav2-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -679,6 +729,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Xcode\\ 11.5,\\ Swift\\ 5/Device:AppStore:Release",
+					"$(PROJECT_DIR)/Xcode\\ 11.5,\\ Swift\\ 5/Simulator:Debug",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TestESewav2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -688,6 +744,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TestESewav2;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestESewav2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
