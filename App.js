@@ -19,13 +19,13 @@ import ESewaModule from './ESewaModule';
 
 const {ESewa} = NativeModules;
 
+const merchantId = 'JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R';
+const merchatSecret = 'BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==';
+
 const App = () => {
   useEffect(() => {
     if (Platform.OS === 'android') {
-      ESewaModule.init(
-        'JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R',
-        'BhwIWQQADhIYSxILExMcAgFXFhcOBwAKBgAXEQ==',
-      );
+      ESewaModule.init(merchantId, merchatSecret);
     }
   }, []);
 
@@ -40,7 +40,14 @@ const App = () => {
   const handleESewaPay = async () => {
     try {
       if (Platform.OS === 'ios') {
-        const eSewaData = await ESewa.pay();
+        const eSewaData = await ESewa.pay(
+          merchantId,
+          merchatSecret,
+          '200',
+          'Apple',
+          '100',
+          'abc.com',
+        );
         console.warn(eSewaData);
       } else {
         const data = await ESewaModule.pay('200', 'Apple', '100', 'abc.com');

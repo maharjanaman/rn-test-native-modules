@@ -47,7 +47,7 @@ class ESewaViewController: UIViewController {
   }
   
   func initiatePayment() {
-    //Start payment process
+    // Start payment process
     sdk = EsewaSDK(inViewController: self, environment: .development, delegate: self)
     sdk?.initiatePayment(
       merchantId: "JB0BBQ4aD0UqIThFJwAKBgAXEUkEGQUBBAwdOgABHD4DChwUAB0R",

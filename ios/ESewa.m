@@ -15,7 +15,13 @@ RCT_EXTERN_METHOD(
                   decrement: (RCTPromiseResolveBlock)resolve
                   rejector: (RCTPromiseRejectBlock)reject
                   )
-RCT_EXTERN_METHOD(pay: (RCTPromiseResolveBlock)resolve
+RCT_EXTERN_METHOD(pay: (NSString)merchantId
+                  extMerchantSecret: (NSString)merchantSecret
+                  extProductId: (NSString)productId
+                  extProductName: (NSString)productName
+                  extProductAmount: (NSString)productAmount
+                  extCallbackUrl: (NSString)callbackUrl
+                  resolver: (RCTPromiseResolveBlock)resolve
                   rejector: (RCTPromiseRejectBlock)reject
                   )
 @end

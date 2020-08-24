@@ -38,7 +38,13 @@ class ESewa: NSObject {
   
   @objc
   func pay(
-    _ resolve: @escaping RCTPromiseResolveBlock,
+    _ merchantId: NSString,
+    extMerchantSecret merchantSecret: NSString,
+    extProductId productId: NSString,
+    extProductName productName: NSString,
+    extProductAmount productAmount: NSString,
+    extCallbackUrl callbackUrl: NSString,
+    resolver resolve: @escaping RCTPromiseResolveBlock,
     rejector reject: @escaping RCTPromiseRejectBlock
   ) -> Void {
     DispatchQueue.main.async {
